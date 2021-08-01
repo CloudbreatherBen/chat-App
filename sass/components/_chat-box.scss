@@ -1,0 +1,17 @@
+.chat-box{
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem;
+    line-height: 2.5rem;
+font-size: 1rem;
+
+    &__text{
+        width: 30%;
+        margin: 0 auto;
+        font-weight: 400;
+        padding-bottom: 4rem;
+    }
+    &__image{
+        width: 70%;
+    }
+}

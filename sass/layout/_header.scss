@@ -1,0 +1,43 @@
+.header {
+    height: 100vh;
+   background-color: $color-primary;
+
+    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+            only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+            only screen and (min-width: 125em) {
+                background-color: $color-primary;
+    }
+
+  
+
+    &__logo-box {
+        position: absolute;
+        top: 5rem;
+        left: 21rem;
+    }
+
+    &__logo {
+        height: 3.5rem;
+    }
+    
+    &__text-box {
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        
+    }
+
+   &__image-box{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+
+   }
+
+   &__image{
+       width: 100%;
+   }
+
+}

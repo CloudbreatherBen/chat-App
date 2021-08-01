@@ -1,0 +1,123 @@
+body {
+    font-family:$roboto;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $color-grey-dark;
+}
+
+.heading-primary {
+    color: $color-white;
+    
+    text-transform: uppercase;
+
+    backface-visibility: hidden;
+    margin-bottom: 2rem;
+
+    &--main {
+        display: block;
+        font-family: $poppins;
+        font-size: 5rem;
+        font-weight: 600; 
+        line-height: 5rem;
+        letter-spacing: -0.1rem;
+        max-width: 60%;
+    
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+        
+        @include respond(phone) {
+            letter-spacing: 1rem;
+            font-family: 5rem;
+        }
+    
+    }
+    
+    &--sub {
+        display: block;
+        font-family: $roboto;
+        font-size: 1.5rem;
+        font-weight: 400;
+        animation: moveInRight 1s ease-out;
+
+      
+    }
+}
+.heading-primary--2 {
+    color: color-grey-dark-3;
+    
+    text-transform: uppercase;
+
+    backface-visibility: hidden;
+    margin-bottom: 2rem;
+
+    &--main {
+        display: block;
+        font-family: $poppins;
+        font-size: 3rem;
+        font-weight: 500; 
+        line-height: 5rem;
+        letter-spacing: -0.1rem;
+        max-width: 80%;
+    
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+        
+        @include respond(phone) {
+            letter-spacing: 1rem;
+            font-family: 5rem;
+        }
+    
+    }
+    
+    &--sub {
+        display: block;
+        font-family: $roboto;
+        font-size: 1.5rem;
+        font-weight: 400;
+        
+        animation: moveInRight 1s ease-out;
+
+       
+    }
+}
+
+.heading-secondary {
+    font-size: 3.5rem;
+    font-family: $poppins;
+    text-transform:capitalize;
+    font-weight: 500;
+    display: inline-block;
+    color: $color-grey-dark-3;
+  
+
+    @include respond(tab-port) {
+        font-size: 3rem;
+    }
+
+    @include respond(phone) {
+        font-size: 2.5rem;
+    }
+
+
+}
+
+.heading-tertiary {
+    font-size: $default-font-size;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    font-size: $default-font-size;
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}
+
+
+
+
+
